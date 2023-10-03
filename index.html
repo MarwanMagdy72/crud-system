@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/Normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="w-75 mx-auto shadow-lg p-5 my-5">
+        <h1 class="fw-bolder text-uppercase text-center">CRUD SYSTEM</h1>
+        <label>productName:</label>
+        <input type="text" class="form-control mb-3" id="nameInpute"/>
+        <label>productCategory:</label>
+        <input type="text" class="form-control mb-3" id="catInpute"/>
+        <label>productPrice:</label>
+        <input type="number" class="form-control mb-3" id="priceInpute"/>
+        <labe>productDescription</labe>
+        <textarea class="form-control mb-3" id="desc"> 
+        </textarea>
+<div class="buttons w-100 d-flex">
+    <button class="btn btn-primary d-block" id="addProduct" onclick="createProduct() ">Add Product</button>
+    <button class="btn btn-primary d-none" id="updateProduct" >Update Product</button>
+    <button class="btn btn-danger ms-2"  onclick="Reset()">Reset</button>
+</div>
+     </div>
+      <input class="form-control w-50 m-auto" type="text" onkeyup="search()" id="search" placeholder="search..."/>
+      <div class="w-75 m-auto my-5">
+        <table class="table">
+            <thead>
+           
+                    <th> index</th>
+                    <th>name</th>
+                    <th>Category</th>
+                    <th>price</th>
+                    <th>description</th>
+                    <th>update</th>
+                    <th>delete</th>
+               
+            </thead>
+            <tbody id="tableBody">
+
+            
+            </tbody>
+        </table>
+     </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
