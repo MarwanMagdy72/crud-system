@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CRUD SYSTEM</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/Normalize.css">
@@ -30,24 +30,25 @@
      </div>
       <input class="form-control w-50 m-auto" type="text" onkeyup="search()" id="search" placeholder="search..."/>
       <div class="w-75 m-auto my-5">
-        <table class="table">
-            <thead>
-           
-                    <th> index</th>
-                    <th>name</th>
-                    <th>Category</th>
-                    <th>price</th>
-                    <th>description</th>
-                    <th>update</th>
-                    <th>delete</th>
-               
-            </thead>
-            <tbody id="tableBody">
-
-            
-            </tbody>
-        </table>
-     </div>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Table rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
